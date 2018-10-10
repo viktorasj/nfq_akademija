@@ -1,0 +1,31 @@
+body {
+  background-color: #F5F6F7;
+}
+/* BLOCK */
+
+.container {
+  padding-top: 10%;
+}
+
+.tweet {
+  background-color: #fff;
+  width: 60%;
+  height: auto;
+  border: 1px solid #3B964C;
+  border-right: 3em solid #3B964C;
+  border-radius: 5px;
+  padding: 1em 2em;
+}
+
+/* ELEMENT */
+
+.tweet__email {
+  text-decoration: none;
+  font-weight: 900;
+}
+
+/* MODIFIER */
+
+.tweet__email--blue{
+  color: #538FB4;
+}
