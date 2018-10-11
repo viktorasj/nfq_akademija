@@ -1,3 +1,11 @@
+body {
+  background-color: #F5F6F7;
+}
+
+.container {
+  padding-top: 10%;
+}
+
 .tweet {
   margin-left: auto;
   margin-right: auto;
@@ -27,23 +35,10 @@
   margin-top: 1em;
   margin-bottom: 0em;
 }
-
-body {
-  background-color: #F5F6F7;
-}
-
-/* BLOCK */
-.container {
-  padding-top: 10%;
-}
-
-/* ELEMENT */
 .tweet__email {
   text-decoration: none;
   font-weight: 900;
 }
-
-/* MODIFIER */
 .tweet__email--blue {
   color: #538FB4;
 }
