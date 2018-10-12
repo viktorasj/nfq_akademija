@@ -1,0 +1,17 @@
+{
+    "name": "temp/2_paskaitos_nd",
+    "authors": [
+        {
+            "name": "vik",
+            "email": "viktoras.jefimovas@gmail.com"
+        }
+    ],
+    "require": {
+        "moontoast/math": "^1.1"
+    },
+    "autoload": {
+      "psr-4": {
+          "vic\\testavimas\\": "src/"
+        }
+}
+}
