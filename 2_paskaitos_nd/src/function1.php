@@ -1,10 +1,13 @@
 <?php
-namespace vic\testavimas;
+declare(strict_types=1);
+
+namespace vic\functions;
 
 
 class test {
-  public function __construct (){
-    echo('labas');
+  public function AddInts(int $a, int $b) : int
+  {
+      return (int) $a + $b;
   }
 
 }

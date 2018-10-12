@@ -9,29 +9,19 @@ class ComposerStaticInit4cd525c527c8ad3a9e799fbb2de34beb
     public static $prefixLengthsPsr4 = array (
         'v' => 
         array (
-            'vic\\testavimas\\' => 15,
-        ),
-        'M' => 
-        array (
-            'Moontoast\\Math\\' => 15,
+            'vic\\functions\\' => 14,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'vic\\testavimas\\' => 
+        'vic\\functions\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
-        ),
-        'Moontoast\\Math\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/moontoast/math/src/Moontoast/Math',
         ),
     );
 
     public static $classMap = array (
-        'Moontoast\\Math\\BigNumber' => __DIR__ . '/..' . '/moontoast/math/src/Moontoast/Math/BigNumber.php',
-        'Moontoast\\Math\\Exception\\ArithmeticException' => __DIR__ . '/..' . '/moontoast/math/src/Moontoast/Math/Exception/ArithmeticException.php',
-        'vic\\testavimas\\test' => __DIR__ . '/../..' . '/src/function1.php',
+        'vic\\functions\\test' => __DIR__ . '/../..' . '/src/function1.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

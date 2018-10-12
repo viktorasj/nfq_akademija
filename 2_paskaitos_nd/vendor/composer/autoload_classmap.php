@@ -6,7 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Moontoast\\Math\\BigNumber' => $vendorDir . '/moontoast/math/src/Moontoast/Math/BigNumber.php',
-    'Moontoast\\Math\\Exception\\ArithmeticException' => $vendorDir . '/moontoast/math/src/Moontoast/Math/Exception/ArithmeticException.php',
-    'vic\\testavimas\\test' => $baseDir . '/src/function1.php',
+    'vic\\functions\\test' => $baseDir . '/src/function1.php',
 );

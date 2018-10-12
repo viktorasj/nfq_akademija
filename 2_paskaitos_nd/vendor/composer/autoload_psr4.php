@@ -6,6 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'vic\\testavimas\\' => array($baseDir . '/src'),
-    'Moontoast\\Math\\' => array($vendorDir . '/moontoast/math/src/Moontoast/Math'),
+    'vic\\functions\\' => array($baseDir . '/src'),
 );
