@@ -5,7 +5,7 @@ body {
 .container {
   padding-top: 10%;
 }
-
+/* COMPONENTS */
 .tweet {
   margin-left: auto;
   margin-right: auto;
@@ -13,28 +13,37 @@ body {
   width: 60%;
   height: auto;
   border-radius: 5px;
+  border: 1px solid #000;
+  border-right: 3em solid #000;
   padding: 1em 2em;
 }
-.tweet--border-green {
-  border: 1px solid #3B964C;
-  border-right: 3em solid #3B964C;
+
+/* ELEMENTS */
+
+
+
+/* MODIFIERS */
+.tweet--borderGreen {
+  border-color: #3B964C;
 }
-.tweet--border-orange {
-  border: 1px solid #FD9D31;
-  border-right: 3em solid #FD9D31;
+.tweet--borderOrange {
+  border-color: #FD9D31;
 }
-.tweet--first {
+
+/* UTILITIES */
+.u-firstPost {
   margin-top: 0;
   margin-bottom: 1em;
 }
-.tweet--middle {
+.u-middlePost {
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.tweet--last {
+.u-lastPost {
   margin-top: 1em;
   margin-bottom: 0em;
 }
+
 .tweet__email {
   text-decoration: none;
   font-weight: 900;
