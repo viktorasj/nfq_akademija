@@ -5,6 +5,7 @@ body {
 .container {
   padding-top: 10%;
 }
+
 /* COMPONENTS */
 .tweet {
   margin-left: auto;
@@ -19,8 +20,10 @@ body {
 }
 
 /* ELEMENTS */
-
-
+.tweet-email {
+  text-decoration: none;
+  font-weight: 900;
+}
 
 /* MODIFIERS */
 .tweet--borderGreen {
@@ -29,27 +32,20 @@ body {
 .tweet--borderOrange {
   border-color: #FD9D31;
 }
-
-/* UTILITIES */
-.u-firstPost {
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-.u-middlePost {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-.u-lastPost {
-  margin-top: 1em;
-  margin-bottom: 0em;
-}
-
-.tweet__email {
-  text-decoration: none;
-  font-weight: 900;
-}
-.tweet__email--blue {
+.tweet-email--blue {
   color: #538FB4;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* UTILITIES */
+.u-firstTweet {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.u-middleTweet {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.u-lastTweet {
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
