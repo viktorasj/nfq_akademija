@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'vic\\functions\\test' => $baseDir . '/src/function1.php',
+    'vic\\src\\functions\\function1' => $baseDir . '/src/functions/Function1.php',
 );

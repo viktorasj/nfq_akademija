@@ -1,10 +1,11 @@
 <?php
+// declare(strict_types=1);
 require_once(__DIR__ . '/vendor/autoload.php');
 
-use \vic\functions\test;
+use vic\src\functions\function1;
 
 
-$labas = new test();
+$labas = new function1();
 $number = $labas->AddInts("1",5);
 echo $number;
 

@@ -9,7 +9,7 @@
     "require": {},
     "autoload": {
       "psr-4": {
-          "vic\\functions\\": "src/"
+          "vic\\src\\functions\\": "src/functions"
         }
 }
 }

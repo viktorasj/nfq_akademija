@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'vic\\functions\\' => array($baseDir . '/src'),
+    'vic\\src\\functions\\' => array($baseDir . '/src/functions'),
 );

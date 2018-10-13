@@ -9,19 +9,19 @@ class ComposerStaticInit4cd525c527c8ad3a9e799fbb2de34beb
     public static $prefixLengthsPsr4 = array (
         'v' => 
         array (
-            'vic\\functions\\' => 14,
+            'vic\\src\\functions\\' => 18,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'vic\\functions\\' => 
+        'vic\\src\\functions\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/src/functions',
         ),
     );
 
     public static $classMap = array (
-        'vic\\functions\\test' => __DIR__ . '/../..' . '/src/function1.php',
+        'vic\\src\\functions\\function1' => __DIR__ . '/../..' . '/src/functions/Function1.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
