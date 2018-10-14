@@ -5,7 +5,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 use vic\src\MatrixInfo;
 use vic\src\StringEditor;
 
-// -------------PART 1-------------------
+// -------------PART 1 (WITH strict_types=1)-------------------
 
 $matrix = [
     [1, 1, 1],
@@ -24,7 +24,7 @@ $matrix = [
 $matrixSizeArr = MatrixInfo::getMatrixSize ($matrix);
 MatrixInfo::printSize($matrixSizeArr);
 
-// -------------PART 2-------------------
+// -------------PART 2 (WITHOUT strict_types=1)-------------------
 
 $myString = "I love to code";
 // $myString = 123456;           // converts to string "123456"

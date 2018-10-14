@@ -22,8 +22,8 @@ class StringEditor {
     }
   }
   public function parseString ($editedString){
-    echo ('<br />');
-    print_r($editedString);
+
+    echo nl2br("\n".$editedString);
   }
 }
 

@@ -162,8 +162,8 @@ class ComposerStaticInit4cd525c527c8ad3a9e799fbb2de34beb
         'MathPHP\\Statistics\\Regression\\WeightedLinear' => __DIR__ . '/..' . '/markrogoyski/math-php/src/Statistics/Regression/WeightedLinear.php',
         'MathPHP\\Statistics\\Significance' => __DIR__ . '/..' . '/markrogoyski/math-php/src/Statistics/Significance.php',
         'MathPHP\\Trigonometry' => __DIR__ . '/..' . '/markrogoyski/math-php/src/Trigonometry.php',
-        'vic\\src\\MatrixInfo' => __DIR__ . '/../..' . '/src/Matrix.php',
-        'vic\\src\\StringEditor' => __DIR__ . '/../..' . '/src/Strings.php',
+        'vic\\src\\MatrixInfo' => __DIR__ . '/../..' . '/src/MatrixInfo.php',
+        'vic\\src\\StringEditor' => __DIR__ . '/../..' . '/src/StringsEditor.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

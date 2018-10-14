@@ -139,6 +139,6 @@ return array(
     'MathPHP\\Statistics\\Regression\\WeightedLinear' => $vendorDir . '/markrogoyski/math-php/src/Statistics/Regression/WeightedLinear.php',
     'MathPHP\\Statistics\\Significance' => $vendorDir . '/markrogoyski/math-php/src/Statistics/Significance.php',
     'MathPHP\\Trigonometry' => $vendorDir . '/markrogoyski/math-php/src/Trigonometry.php',
-    'vic\\src\\MatrixInfo' => $baseDir . '/src/Matrix.php',
-    'vic\\src\\StringEditor' => $baseDir . '/src/Strings.php',
+    'vic\\src\\MatrixInfo' => $baseDir . '/src/MatrixInfo.php',
+    'vic\\src\\StringEditor' => $baseDir . '/src/StringsEditor.php',
 );
