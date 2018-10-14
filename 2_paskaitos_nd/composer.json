@@ -6,10 +6,12 @@
             "email": "viktoras.jefimovas@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "markrogoyski/math-php": "^0.45.0"
+    },
     "autoload": {
       "psr-4": {
-          "vic\\src\\functions\\": "src/functions"
+          "vic\\src\\": "src/"
         }
 }
 }

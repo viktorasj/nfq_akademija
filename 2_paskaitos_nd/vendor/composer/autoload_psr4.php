@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'vic\\src\\functions\\' => array($baseDir . '/src/functions'),
+    'vic\\src\\' => array($baseDir . '/src'),
+    'MathPHP\\' => array($vendorDir . '/markrogoyski/math-php/src'),
 );
