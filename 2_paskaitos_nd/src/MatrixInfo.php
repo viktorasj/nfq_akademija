@@ -6,10 +6,6 @@ namespace vic\src;
 
 use MathPHP\LinearAlgebra\Matrix;
 use MathPHP\LinearAlgebra\MatrixFactory;
-// use MathPHP\Exception\BadDataException;
-//
-// var_dump (BadDataException);
-
 
 
 class MatrixInfo {
