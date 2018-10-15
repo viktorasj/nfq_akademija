@@ -21,11 +21,11 @@ $matrix_info_obj = new MatrixInfo($matrix);
 print_r($matrix_info_obj->matrixSize());
 echo nl2br("\n");
 
-//getting matrix determinant, if matrix is square. If not - nothing given;
+//getting matrix determinant, if matrix is square. If not - nothing is parsed;
 print_r($matrix_info_obj->matrixDeterminant());
 echo nl2br("\n");
 
-// this method used to get desired element of matrix by sending array of element corrdinates [x, y] in matrix;
+//getting desired element of matrix by sending array of element corrdinates [x, y] in matrix;
 print_r($matrix_info_obj->getMatrixElement([2, 3]));
 echo nl2br("\n");
 

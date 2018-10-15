@@ -7,6 +7,7 @@ namespace vic\src;
 use MCordingley\LinearAlgebra\Matrix;
 
 class MatrixInfo {
+
   public $matrixObj;
   public $matrixSize = [];
   public $isMatrixSquare;
