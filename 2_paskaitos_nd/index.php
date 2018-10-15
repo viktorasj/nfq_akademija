@@ -6,7 +6,7 @@ use vic\src\MatrixInfo;
 use vic\src\StringEditor;
 
 echo('-------------With strict_types=1-------------------');
-echo nl2br("\n");
+echo ('<br/>');
 
 $matrix = [
     [1, 12, 1],
@@ -17,17 +17,17 @@ $matrix = [
 //creating matrix object
 $matrix_info_obj = new MatrixInfo($matrix);
 
-//getting matrix size in array;
+//printing matrix size in array;
 print_r($matrix_info_obj->matrixSize());
-echo nl2br("\n");
+echo ('<br/>');
 
-//getting matrix determinant, if matrix is square. If not - nothing is parsed;
+//printing matrix determinant, if matrix is square. If not - nothing is parsed;
 print_r($matrix_info_obj->matrixDeterminant());
-echo nl2br("\n");
+echo ('<br/>');
 
-//getting desired element of matrix by sending array of element corrdinates [x, y] in matrix;
+//printing desired element of matrix by sending array of element corrdinates [x, y] in matrix;
 print_r($matrix_info_obj->getMatrixElement([2, 3]));
-echo nl2br("\n");
+echo ('<br/>');
 
 
 echo('-------------Without strict_types=1-------------------');

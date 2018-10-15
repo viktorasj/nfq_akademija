@@ -1,0 +1,5 @@
+online (link);
+Part 1:
+If you'd change $matrix to any other type except array - the error will be displayed. If you'll try to pass not an array in getMatrixElement() method - the error will be displayed too. Pros of using this is that you'll get error before next part of code will be executed, the code is easily readable. Cons is that more strict rules is for writing the code.
+Part 2:
+We can change $string to f.e. 123456 and the code executes without errors, it converts integer to string and reverses to 654321 with stringReverse() method. Even if you pass boolean(true) - it converts it to 1 and the code works. The pros is that code WORKS with most types of variables with no errors. Cons is that it's hard to decide what type of variable to use, as code can work without any errors and in the next part of code you can get fatal errors. It could be harder to debug.
