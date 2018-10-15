@@ -8,24 +8,41 @@ use MCordingley\LinearAlgebra\Matrix;
 
 class MatrixInfo {
   public $matrixObj;
+  public $matrixSize = [];
+  public $matrixDeterm;
+  public $isMatrixSquare;
+  public $determFailMessage;
+
 
   public function __construct($passedMatrix)
   {
     $this->matrixObj = new Matrix($passedMatrix);
+    $this->validateMatrixObj();
+    $this->matrixSize();
   }
 
-  public function getMatrixSize (): array
+  public function validateMatrixObj(): Matrix
   {
-      $matrixSize['rows'] = $this->matrixObj->getRowCount();
-      $matrixSize['columns'] = $this->matrixObj->getColumnCount();
-      return $matrixSize;
+    return $this->matrixObj;
   }
 
-  public function printSize (array $size): void
+  public function matrixSize (): void
   {
-    if ($size)
+      $this->matrixSize['rows'] = $this->matrixObj->getRowCount();
+      $this->matrixSize['columns'] = $this->matrixObj->getColumnCount();
+      $this->matrixSize['columns'] === $this->matrixSize['rows'] ? $this->isMatrixSquare = true : $this->isMatrixSquare = false;
+  }
+
+  // public function printMatrixDeterminant (): void
+  // {
+  //   $this->isMatrixSquare ? echo 'Matrix determinant: '.$matrixObj->determinant() : echo 'Matrix is not square and hasn\'t determinant'
+  // }
+
+  public function printInfo (): void
+  {
+    if ($this->matrixObj)
     {
-      echo 'Matrix has '.$size['columns'].' columns and '.$size['rows'].' rows';
+      echo 'Matrix has '.$this->matrixSize['columns'].' columns and '.$this->matrixSize['rows'].' rows and matrix determinant is'.$this->matrixDeterm;
     }
   }
 

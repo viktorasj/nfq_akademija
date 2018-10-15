@@ -8,13 +8,14 @@ use vic\src\StringEditor;
 // -------------Su strict_types=1-------------------
 
 $matrix = [
-    [1, 1, 1],
-    [2, 2, 2],
-    [3, 3, 3],
-    [4, 4, 1]
+    [1, 12, 1],
+    [2, 8, 2],
+    [6, 8, 9],
 ];
+
 $matrix_info_obj = new MatrixInfo($matrix);
-$matrix_info_obj->printSize($matrix_info_obj->getMatrixSize());
+// $matrix_info_obj->matrixDeterminant();
+$matrix_info_obj->printInfo();
 
 // -------------Be strict_types=1-------------------
 
