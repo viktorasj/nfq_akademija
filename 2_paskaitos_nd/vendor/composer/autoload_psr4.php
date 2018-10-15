@@ -7,5 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'vic\\src\\' => array($baseDir . '/src'),
-    'MathPHP\\' => array($vendorDir . '/markrogoyski/math-php/src'),
+    'MCordingley\\LinearAlgebra\\' => array($vendorDir . '/mcordingley/linearalgebra/src'),
 );

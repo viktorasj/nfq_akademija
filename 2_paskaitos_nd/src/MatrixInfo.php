@@ -4,30 +4,28 @@ declare(strict_types=1);
 
 namespace vic\src;
 
-use MathPHP\LinearAlgebra\Matrix;
-use MathPHP\LinearAlgebra\MatrixFactory;
-
+use MCordingley\LinearAlgebra\Matrix;
 
 class MatrixInfo {
-  public static $matrixObj;
-  public static $matrixSize = [];
+  public $matrixObj;
 
-  public static function getMatrixSize (array $passedMatrix): array
+  public function __construct($passedMatrix)
   {
-      self::$matrixObj = new Matrix($passedMatrix);
-      MatrixInfo::setMatrixSize();
-      return self::$matrixSize;
+    $this->matrixObj = new Matrix($passedMatrix);
   }
 
-  public static function setMatrixSize (): void
+  public function getMatrixSize (): array
   {
-      array_push (self::$matrixSize, self::$matrixObj->getN(), self::$matrixObj->getM());
-
+      $matrixSize['rows'] = $this->matrixObj->getRowCount();
+      $matrixSize['columns'] = $this->matrixObj->getColumnCount();
+      return $matrixSize;
   }
-  public static function printSize (array $size): void
+
+  public function printSize (array $size): void
   {
-    if ($size) {
-      echo 'Matrix has '.$size[0].' columns and '.$size[1].' rows';
+    if ($size)
+    {
+      echo 'Matrix has '.$size['columns'].' columns and '.$size['rows'].' rows';
     }
   }
 

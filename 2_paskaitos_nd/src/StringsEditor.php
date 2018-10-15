@@ -2,7 +2,6 @@
 
 namespace vic\src;
 
-
 class StringEditor {
   public $string;
 
