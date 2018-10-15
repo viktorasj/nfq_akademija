@@ -5,6 +5,8 @@ require_once(__DIR__ . '/vendor/autoload.php');
 use vic\src\MatrixInfo;
 use vic\src\StringEditor;
 
+
+//---------------------PART 1------------------------------
 echo('-------------With strict_types=1-------------------');
 echo ('<br/>');
 
@@ -25,11 +27,12 @@ echo ('<br/>');
 print_r($matrix_info_obj->matrixDeterminant());
 echo ('<br/>');
 
-//printing desired element of matrix by sending array of element corrdinates [x, y] in matrix;
+//printing desired element of matrix by sending array of element corrdinates [row, column] in matrix;
 print_r($matrix_info_obj->getMatrixElement([2, 3]));
 echo ('<br/>');
 
 
+//---------------------PART 2------------------------------
 echo('-------------Without strict_types=1-------------------');
 
 $myString = "I love to code";

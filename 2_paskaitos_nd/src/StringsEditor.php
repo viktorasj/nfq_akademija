@@ -20,8 +20,8 @@ class StringEditor {
       $this->parseString(strtoupper($this->string));
     }
   }
+  
   public function parseString ($editedString){
-
     echo nl2br("\n".$editedString);
   }
 }
