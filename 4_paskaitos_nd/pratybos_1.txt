@@ -1,0 +1,4 @@
+USE books;
+SELECT * FROM books;
+SELECT title FROM books ORDER BY title ASC;
+SELECT authorId, count(books.title) FROM books GROUP BY authorId;

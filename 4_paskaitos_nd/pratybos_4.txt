@@ -1,0 +1,5 @@
+SELECT authors.name, authors.authorId, COUNT(books.title) FROM authors INNER JOIN books ON authors.authorId = books.authorId GROUP BY authors.name ASC;
+SELECT authors.name, authors.authorId, COUNT(books.title) FROM authors LEFT JOIN books ON authors.authorId = books.authorId GROUP BY authors.name ASC;
+
+DELETE authors FROM authors LEFT JOIN books ON authors.authorId = books.authorId WHERE books.authorId IS NULL;
+

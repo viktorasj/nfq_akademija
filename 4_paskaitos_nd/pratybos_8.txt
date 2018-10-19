@@ -1,0 +1,62 @@
+--
+-- RUNING THIS SCRIPT AFTER INSERTING GIVEN BOOKS.SQL FILE IT RETURNS LAST DATABASE STRUCTURE
+--
+
+--
+-- Changing charsets to see lithuanian symbols:
+--
+ALTER DATABASE `books` CHARSET utf8 COLLATE utf8_general_ci;
+ALTER TABLE `books` CONVERT TO CHARSET utf8 collate utf8_general_ci;
+ALTER TABLE `authors` CONVERT TO CHARSET utf8 collate utf8_general_ci;
+
+--
+-- Inserting extra authors to authors table
+--
+ALTER TABLE `authors` AUTO_INCREMENT = 8;
+INSERT INTO `authors` (`name`) VALUES
+('Tim Berglund'), 
+('Matthew McCullough'), 
+('Jon Loelinger'), 
+('Mark Lutz'), 
+('Evelina Daciutė'), 
+('Aušra Kiudulaitė');
+
+--
+-- Inserting lithuanian book
+--
+
+ALTER TABLE `books` AUTO_INCREMENT = 9;
+INSERT INTO `books` (`title`, `year`) VALUES
+('Laimė yra lapė', 2016);
+
+--
+-- Deleting `authorId` column from `books` table
+--
+ALTER TABLE `books` DROP COLUMN `authorId`;
+
+--
+-- Table structure for table `books_authors`
+--
+
+CREATE TABLE IF NOT EXISTS `books_authors` (`bookId` int(11), `authorId` int(11)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `books_authors`
+--
+
+INSERT INTO `books_authors` (`bookId`, `authorId`) VALUES
+(1, 1), 
+(2, 2), 
+(2, 3), 
+(3, 4), 
+(3, 5), 
+(4, 6), 
+(5, 7), 
+(6, 8), 
+(6, 9), 
+(7, 10), 
+(7, 9), 
+(8, 11),
+(9, 12),
+(9, 13);
+

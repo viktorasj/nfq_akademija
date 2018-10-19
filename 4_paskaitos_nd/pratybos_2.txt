@@ -1,0 +1,8 @@
+INSERT INTO authors SET name = "JK Rowling";
+INSERT INTO authors SET name = "Stephen King";
+
+INSERT INTO books SET authorId = 8, title="Harry Potter", year = 1997;
+INSERT INTO books SET authorId = 9, title="The Green Mile", year = 1996;
+INSERT INTO books SET authorId = 9, title="The Dead Zone", year = 1979;
+
+UPDATE books SET authorId = 5 WHERE authorId = 7;
