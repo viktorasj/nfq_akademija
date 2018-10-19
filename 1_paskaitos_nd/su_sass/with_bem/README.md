@@ -1,1 +1,1 @@
-[Preview](https://htmlpreview.github.io/?https://github.com/viktorasj/nfq_akademija/blob/master/1_paskaitos_nd/with_bem/Index.html)
+[Preview](https://htmlpreview.github.io/?https://github.com/viktorasj/nfq_akademija/blob/master/1_paskaitos_nd/su_sass/with_bem/Index.html)
