@@ -1,0 +1,11 @@
+{
+  "build/js/main.js": "/build/js/main.js",
+  "build/css/app.css": "/build/css/app.css",
+  "build/libs/mapoid.js": "/build/libs/mapoid.js",
+  "build/js/app.js": "/build/js/app.js",
+  "build/images/background.jpg": "/build/images/background.f2e153a7.jpg",
+  "build/images/busyline-block-busy-end.png": "/build/images/busyline-block-busy-end.0689a56b.png",
+  "build/images/busyline-block-busy-start.png": "/build/images/busyline-block-busy-start.8d9e8932.png",
+  "build/images/busyline-block-busy.png": "/build/images/busyline-block-busy.004e8bba.png",
+  "build/images/busyline-block-free.png": "/build/images/busyline-block-free.0af7ea43.png"
+}
